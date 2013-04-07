@@ -198,6 +198,12 @@ h2 a {
 
 .lighttxt {
 	color: #c0c0c0;
+	padding: 0 .3em 0 .3em;
+}
+
+.eventmeta {
+	font-size: 75%;
+	margin: 0 0 2em 0;
 }
 
 .slot {
