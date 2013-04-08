@@ -41,7 +41,8 @@ function initFavourites(){
 		if(w4mstorage.getItem(fav) == '1' ){
 			$(this).addClass('fav');
 		}
-		$(this).prepend('<div class="directlink">#</div>')
+		$(this).attr('title', 'http://' + fav);
+		$(this).append('<p class="directlink">http://' + fav +'</p>');
 	});
 }
 
