@@ -248,6 +248,12 @@ h2 a {
 	box-shadow: 1px 1px 10px #909090;
 }
 
+.fav {
+	background-image: url(../img/star.png);
+	background-repeat: no-repeat; 
+	background-position: top right;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
