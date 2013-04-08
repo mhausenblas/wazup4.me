@@ -16,6 +16,26 @@ $(function(){
 		}
 		return false;
 	});
+	
+	$('#show-my-sessions').click(function(){
+		$(this).addClass('filter-active');
+		$('#show-all-sessions').removeClass('filter-active');
+		showFavourites();
+		return false;
+	});
+	
+	$('#show-all-sessions').click(function(){
+		$(this).addClass('filter-active');
+		$('#show-my-sessions').removeClass('filter-active');
+		$('.slot').each(function() {
+			$(this).show();
+		});
+		$('.what').each(function() {
+			$(this).show();
+		});
+		return false;
+	});
+	
 });
 
 function initFavourites(){
@@ -23,6 +43,19 @@ function initFavourites(){
 		var fav = W4M_EVENT_PREFIX + $(this).attr('id');
 		if(w4mstorage.getItem(fav) == '1' ){
 			$(this).addClass('fav');
+		}
+	});
+}
+
+function showFavourites(){
+	$('.what').each(function() {
+		var fav = W4M_EVENT_PREFIX + $(this).attr('id');
+		if(w4mstorage.getItem(fav) == '1' ){
+			$(this).show();
+		}
+		else {
+			$(this).hide();
+			$(this).prev().hide();
 		}
 	});
 }

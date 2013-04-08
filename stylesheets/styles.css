@@ -254,6 +254,21 @@ h2 a {
 	background-position: top right;
 }
 
+.session-sel{
+	padding: 2px 5px;
+	margin: 0 1em 0 0;
+	color: #ee9999;
+}
+
+.filter-active {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 1px 1px 10px #909090;
+	-webkit-box-shadow:1px 1px 10px #909090;
+	box-shadow: 1px 1px 10px #909090;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
