@@ -27,10 +27,7 @@ $(function(){
 	$('#show-all-sessions').click(function(){
 		$(this).addClass('filter-active');
 		$('#show-my-sessions').removeClass('filter-active');
-		$('.slot').each(function() {
-			$(this).show();
-		});
-		$('.what').each(function() {
+		$('p,span').each(function() {
 			$(this).show();
 		});
 		return false;
