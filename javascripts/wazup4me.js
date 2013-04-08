@@ -18,7 +18,6 @@ $(function(){
 	});
 });
 
-
 function initFavourites(){
 	$('.what').each(function() {
 		var fav = W4M_EVENT_PREFIX + $(this).attr('id');
